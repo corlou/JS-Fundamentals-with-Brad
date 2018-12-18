@@ -52,9 +52,42 @@ alert('My favorite number is ' +number1);
     };
     */
 
-  let numbers = [33,54,76,34,6];
-    numbers.forEach(function(number){
-      console.log(number);
-    });
+  //For Each
+    /*let numbers = [33,54,76,34,6];
+      numbers.forEach(function(number){
+        console.log(number);
+      });
+    */
 
+//Conditionals
+  
+  /*let var1 = 3;
+  let var2 = 4;
+if( var1 == var2 || var1 == 3){
+    console.log('This is true');
+  } else {
+    console.log('This is false');
+  }
+  */
 
+  //Switch Statements in Conditionals
+
+  let fruit = 'apple';
+  //let fruit = 'bananas';
+  //let fruit = 'orange';
+  //let fruit = 'grapes'; = I love all other fruits will appear
+  switch(fruit){
+    case "banana":
+      alert('I hate bananas');
+      break;
+    case "apple":
+      alert("I love apples");
+      break;
+    case "orange":
+      alert("oranges are ok");
+      break;
+    default:
+      alert("I love all other fruits");
+      break;
+
+  }
