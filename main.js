@@ -24,13 +24,37 @@ alert('My favorite number is ' +number1);
   colors.push('purple');
   alert(colors[3]);*/
 
-  let numbers = [5,77,6,'Seven'];
+  //let numbers = [5,77,6,'Seven'];
   
   /*alert(numbers.length); //how many values are in the array (there are 4)*/
 
   //alert(numbers.sort());
 
-  alert(numbers.reverse());
+  //alert(numbers.reverse());
 
 
-// Object
+/* Object
+  Objects are variables too. But objects can contain many values.
+*/
+
+//Loops = For, While, and For Each (for each is built to work with Arrays)
+
+  //For
+    /*for(let i = 0; i <= 20; i++){
+      console.log('I love the number' +i);
+    }
+    */
+  //While
+    /*let i = 0;
+    while(i < 10) {
+      console.log(i);
+      i++;
+    };
+    */
+
+  let numbers = [33,54,76,34,6];
+    numbers.forEach(function(number){
+      console.log(number);
+    });
+
+
