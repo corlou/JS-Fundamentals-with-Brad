@@ -72,11 +72,11 @@ if( var1 == var2 || var1 == 3){
 
   //Switch Statements in Conditionals
 
-  let fruit = 'apple';
+  //let fruit = 'apple';
   //let fruit = 'bananas';
   //let fruit = 'orange';
   //let fruit = 'grapes'; = I love all other fruits will appear
-  switch(fruit){
+  /*switch(fruit){
     case "banana":
       alert('I hate bananas');
       break;
@@ -89,5 +89,76 @@ if( var1 == var2 || var1 == 3){
     default:
       alert("I love all other fruits");
       break;
+    }*/
 
+//Objects
+// use dot.notation
+    
+  //Object Literal
+   /* let person = {
+      firstName: 'Brad',
+      lastName: 'Traversy',
+      age: 34,
+      children: ['Brianna', 'Nicholas'],
+      address: {
+        street: '555 Something St',
+        city: 'Boston',
+        state: 'MA',
+      },
+      fullName: function(){
+        return this.firstName +" "+ this.lastName;
+      }
+    }
+
+  //console.log(person.firstName);
+  //console.log(person.lastName);
+  //console.log(person.age);
+  //console.log(person.children[0]);
+  //console.log(person.address);
+  //console.log(person.fullName());
+  */
+
+  //Object Constructor
+  /*let apple = new Object();
+  apple.color = 'red';
+  apple.shape = 'round';
+
+  apple.describe = function(){
+    return 'An apple is the color '+this.color+' and the shape is '+this.shape;
   }
+  console.log(apple.describe());
+  */
+
+  //Constructor Pattern
+  /*function Fruit(name, color, shape){
+    this.name = name;
+    this.color = color;
+    this.shape = shape;
+
+    this.describe = function (){
+      return 'A '+this.name+' is the color '+this.color+' and the shape is '+this.shape;
+    }
+  }
+
+  //let apple = new Fruit('apple', 'red', 'round');
+  //let melon = new Fruit('melon', 'green', 'round');
+  //console.log(melon.describe());
+  */
+
+  //Arrays of objects
+  let users  = [
+    {
+      name: 'John Doe',
+      age: 30
+    },
+    {
+      name: 'Mark Smith',
+      age: 44
+    },
+    {
+      name: 'Shelly Williams',
+      age: 20
+    },
+  ];
+
+  console.log(users[0].name);
