@@ -1,5 +1,4 @@
 
-
 /* Number
 let number1 = "35"; //no quotes = number, quotes = string
 let number2 = "40"; //adding quotes around the numbers and adding them together concatonates. Results in 3540
@@ -146,7 +145,7 @@ if( var1 == var2 || var1 == 3){
   */
 
   //Arrays of objects
-  let users  = [
+  /*let users  = [
     {
       name: 'John Doe',
       age: 30
@@ -162,3 +161,4 @@ if( var1 == var2 || var1 == 3){
   ];
 
   console.log(users[0].name);
+  */

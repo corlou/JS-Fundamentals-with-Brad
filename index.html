@@ -10,17 +10,22 @@
     <script src="main.js" type="text/javascript"></script>
   </head>
 
-  <body>
+  <body onLoad="showDate()">
     <div class="header">
-      <h1>Learning JavaScript</h1>
+      <h1 id="heading">Learning JavaScript</h1>
       <p>with Brad Traversy</p>
     </div>
 
     <div class="container">
-
-
-    </div>
-
+      <h1 id=time></h1>
+      <button onClick="showDate()">Show Date</button>
+  </div>
   </body>
-
 </html>
+
+<script>
+  function showDate(){
+   let time = document.getElementById('time');
+   time.innerHTML = Date();
+  }
+</script>
