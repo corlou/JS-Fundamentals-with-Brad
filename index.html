@@ -9,23 +9,52 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" type="text/javascript"></script>
   </head>
+  <body>
 
-  <body onLoad="showDate()">
     <div class="header">
       <h1 id="heading">Learning JavaScript</h1>
       <p>with Brad Traversy</p>
     </div>
 
     <div class="container">
-      <h1 id=time></h1>
-      <button onClick="showDate()">Show Date</button>
+  </div>
+
+  <div>
+    <form methods="post" action="something.php" name="myForm" onSubmit="return validateForm()">
+      <div>
+        <label>First Name</label>
+        <input type="text" name="firstName" id="firstName"/>
+      </div>
+
+      <br>
+
+      <div>
+          <label>Last Name</label>
+          <input type="text" name="lastName" id="lastName"/>
+        </div>
+
+        <br>
+
+        <input type="submit" value="Submit"/>
+    </form>
+
+
+
+
   </div>
   </body>
 </html>
 
 <script>
-  function showDate(){
-   let time = document.getElementById('time');
-   time.innerHTML = Date();
-  }
+  function validateForm(){
+    let firstName = document.forms["myForm"]["firstName"].value;
+      if(firstName == null || firstName == ""){
+        alert("First Name is required");
+        return false;
+      }
+      if(firstName.length < 3){
+        alert("First Name must be at least 3 characters");
+        return false;
+      }
+    }
 </script>
